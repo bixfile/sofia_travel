@@ -1,0 +1,13 @@
+{
+  "name": "mia-celebrity-services",
+  "version": "1.0.0",
+  "description": "MIA Celebrity Services Paris - Exclusive VIP Services",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": ["mia", "celebrity", "services", "paris", "vip"],
+  "author": "MIA - My International Agent",
+  "license": "MIT"
+}
