@@ -122,10 +122,19 @@
             border-color: #c8a45c;
         }
 
-        .option-image {
+        .option-image-placeholder {
             width: 100%;
             height: 350px;
-            object-fit: cover;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
         }
 
 
@@ -232,11 +241,17 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
-        .event-image {
+        .event-image-placeholder {
             width: 100%;
             height: 200px;
-            object-fit: cover;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
             margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
         }
 
         .event-name {
@@ -384,7 +399,9 @@
             
             <div class="options-grid">
                 <div class="option-card">
-                    <img src="images/MeetAndGreet_NI1.jpg.webp" alt="VIP Greeter Service" class="option-image">
+                    <div class="option-image-placeholder">
+                        <img src="images/MeetAndGreet_NI1.jpg.webp" alt="VIP Greeter Service" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                     <div class="option-content">
                         <div class="option-label">Option 1</div>
                         <h3 class="option-name">VIP Greeter Service</h3>
