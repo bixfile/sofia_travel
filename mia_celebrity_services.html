@@ -362,6 +362,42 @@
             line-height: 1.8;
         }
 
+        /* General Information redesigned cards */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 24px;
+            text-align: left;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .info-card:hover {
+            border-color: #c8a45c;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+        }
+
+        .info-card h4 {
+            color: #c8a45c;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .info-card p {
+            font-size: 1.05rem;
+            color: #1a1a1a;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
@@ -384,100 +420,100 @@
 </head>
 <body>
     <div class="header">
-        <img src="images/MIA_logo_Blanc_SC.png" alt="MIA Logo" style="max-width: 120px; height: auto; margin-bottom: 15px;">
+        <img src="images/MIA_logo_Blanc_SC.png" alt="MIA Logo" style="max-width: 170px; height: auto; margin-bottom: 15px;">
         <div class="subtitle">Sofia — Paris Fashion Week Womenswear SS26</div>
-        <div class="tagline">28/29 septembre – 7/8 octobre 2025 • Paris, France</div>
+        <div class="tagline">28/29 September – 7/8 October 2025 • Paris, France</div>
     </div>
 
     <div class="container">
-        <!-- INFORMATIONS GÉNÉRALES -->
+        <!-- GENERAL INFORMATION -->
         <div class="section">
             <div class="section-header">
-                <h2 class="section-title">Informations générales</h2>
-                <p class="section-subtitle">Dossier client Fashion Week — prise en charge complète et premium</p>
+                <h2 class="section-title">General Information</h2>
+                <p class="section-subtitle">Client brief for Fashion Week — full premium handling</p>
             </div>
-            <div class="contact-info" style="max-width: 1100px;">
-                <div class="contact-item">
+            <div class="info-cards">
+                <div class="info-card">
                     <h4>Client</h4>
                     <p>Sofia</p>
                 </div>
-                <div class="contact-item">
-                    <h4>Événement</h4>
+                <div class="info-card">
+                    <h4>Event</h4>
                     <p>Paris Fashion Week Womenswear SS26</p>
                 </div>
-                <div class="contact-item">
+                <div class="info-card">
                     <h4>Dates</h4>
-                    <p>28/29 septembre – 7/8 octobre 2025 (10–11 nuits)</p>
+                    <p>28/29 September – 7/8 October 2025 (10–11 nights)</p>
                 </div>
-                <div class="contact-item">
+                <div class="info-card">
                     <h4>Destination</h4>
                     <p>Paris, France</p>
                 </div>
-                <div class="contact-item">
-                    <h4>Hébergement</h4>
-                    <p>Hôtel Costes — Suite Prestige (vue)</p>
+                <div class="info-card">
+                    <h4>Accommodation</h4>
+                    <p>Hotel Costes — Prestige Suite (view)</p>
                 </div>
             </div>
         </div>
 
-        <!-- OBJECTIFS DE LA MISSION -->
+        <!-- MISSION OBJECTIVES -->
         <div class="section">
             <div class="section-header">
-                <h2 class="section-title">Objectifs de la mission</h2>
-                <p class="section-subtitle">Expérience Fashion Week premium et création d’opportunités</p>
+                <h2 class="section-title">Mission Objectives</h2>
+                <p class="section-subtitle">Premium Fashion Week experience and opportunity creation</p>
             </div>
             <div class="container" style="padding: 0; max-width: 1100px;">
-                <div class="luxury-badge">Expérience Fashion Week Premium</div>
+                <div class="luxury-badge">Premium Fashion Week Experience</div>
                 <div class="features-list">
-                    <div class="feature-item">Accès privilégié aux défilés les plus exclusifs</div>
-                    <div class="feature-item">Networking avec les personnalités clés de l'industrie</div>
-                    <div class="feature-item">Immersion totale dans l'univers de la mode parisienne</div>
-                    <div class="feature-item">Création d'opportunités business et image</div>
+                    <div class="feature-item">Privileged access to the most exclusive runway shows</div>
+                    <div class="feature-item">Networking with key industry personalities</div>
+                    <div class="feature-item">Full immersion in the Parisian fashion universe</div>
+                    <div class="feature-item">Creation of business and image opportunities</div>
                 </div>
-                <div class="luxury-badge">Services sur mesure</div>
+                <div class="luxury-badge">Tailor‑made Services</div>
                 <div class="features-list">
-                    <div class="feature-item">Accompagnement personnalisé et coordination 24/7</div>
-                    <div class="feature-item">Adaptation continue selon les préférences de Sofia</div>
+                    <div class="feature-item">Personalized assistance and 24/7 coordination</div>
+                    <div class="feature-item">Continuous adaptation to Sofia’s preferences</div>
                 </div>
             </div>
         </div>
 
-        <!-- SERVICES INCLUS DANS TOUS NOS PACKAGES -->
+        <!-- SERVICES -->
         <div class="section">
             <div class="section-header">
-                <h2 class="section-title">Services inclus</h2>
-                <p class="section-subtitle">Prestations haut de gamme incluses pour la Fashion Week</p>
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">High‑end services for the Fashion Week stay</p>
             </div>
             <div class="options-grid">
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/luxury_hotel_suite.jpg" alt="Hôtel Costes - Suite Prestige" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/luxury_hotel_suite.jpg" alt="Hotel Costes - Prestige Suite" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
-                        <div class="option-label">Hébergement de prestige</div>
-                        <h3 class="option-name">Hôtel Costes — Suite Prestige</h3>
+                        <div class="option-label">Prestige Accommodation</div>
+                        <h3 class="option-name">Hotel Costes — Prestige Suite</h3>
                         <div class="features-list">
-                            <div class="feature-item">Suite Prestige avec vue</div>
-                            <div class="feature-item">Room service 24/7</div>
-                            <div class="feature-item">Petit-déjeuner continental inclus</div>
-                            <div class="feature-item">Late check-out garanti (18h)</div>
-                            <div class="feature-item">Wifi haut débit et services business</div>
+                            <div class="feature-item">Prestige Suite with view</div>
+                            <div class="feature-item">24/7 room service</div>
+                            <div class="feature-item">Continental breakfast included</div>
+                            <div class="feature-item">Guaranteed late check‑out (6 pm)</div>
+                            <div class="feature-item">High‑speed Wi‑Fi and business services</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/private_jet_terminal.png" alt="Jet privé Le Bourget" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/private_jet_terminal.png" alt="Private Jet Le Bourget" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
-                        <div class="option-label">Transport international</div>
-                        <h3 class="option-name">Legacy 650 — 8 passagers</h3>
+                        <div class="option-label">International Transport</div>
+                        <h3 class="option-name">Legacy 650 — up to 8 passengers</h3>
                         <div class="features-list">
-                            <div class="feature-item">Services VIP Le Bourget (aller/retour)</div>
-                            <div class="feature-item">Douane accélérée et bagages prioritaires</div>
-                            <div class="feature-item">Catering premium à bord</div>
-                            <div class="feature-item">Assurance voyage complète</div>
+                            <div class="feature-item">VIP services at Le Bourget (round‑trip)</div>
+                            <div class="feature-item">Fast‑track customs and priority baggage</div>
+                            <div class="feature-item">Premium catering on board</div>
+                            <div class="feature-item">Comprehensive travel insurance</div>
                         </div>
                     </div>
                 </div>
@@ -486,33 +522,33 @@
             <div class="options-grid">
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/AdobeStock_748194500.jpeg" alt="Mercedes Classe S avec chauffeur" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/AdobeStock_748194500.jpeg" alt="Mercedes V-Class with chauffeur" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
-                        <div class="option-label">Transport local</div>
-                        <h3 class="option-name">Mercedes Classe S — Chauffeur bilingue</h3>
+                        <div class="option-label">Local Transportation</div>
+                        <h3 class="option-name">Mercedes V‑Class — Chauffeur</h3>
                         <div class="features-list">
-                            <div class="feature-item">Disponibilité 24/7 pendant le séjour</div>
-                            <div class="feature-item">Eau, journaux et WiFi à bord</div>
-                            <div class="feature-item">Carburant et parking inclus</div>
-                            <div class="feature-item">Véhicule de backup en cas d'urgence</div>
+                            <div class="feature-item">24/7 availability during the stay</div>
+                            <div class="feature-item">Water, press and Wi‑Fi on board</div>
+                            <div class="feature-item">Fuel and parking included</div>
+                            <div class="feature-item">Backup vehicle in case of emergency</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/fashion_week.jpeg" alt="Accès Fashion Week" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/fashion_week.jpeg" alt="Fashion Week Access" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
                         <div class="option-label">Fashion Week Access</div>
-                        <h3 class="option-name">Accès privilégiés & événements</h3>
+                        <h3 class="option-name">Privileged access & events</h3>
                         <div class="features-list">
-                            <div class="feature-item">5–8 défilés selon préférences</div>
-                            <div class="feature-item">Places assises prioritaires (front row quand possible)</div>
-                            <div class="feature-item">Afterparty Casablanca — Table VIP confirmée</div>
-                            <div class="feature-item">3–4 événements prestige supplémentaires</div>
-                            <div class="feature-item">Accès backstage selon disponibilités</div>
+                            <div class="feature-item">5–8 shows based on preferences</div>
+                            <div class="feature-item">Priority seating (front row when possible)</div>
+                            <div class="feature-item">Casablanca after‑party — VIP table confirmed</div>
+                            <div class="feature-item">3–4 additional prestige events</div>
+                            <div class="feature-item">Backstage access subject to availability</div>
                         </div>
                     </div>
                 </div>
@@ -521,27 +557,27 @@
             <div class="options-grid">
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/preview-928x522.jpg" alt="Conciergerie 24/7" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?auto=format&fit=crop&w=1600&q=80" alt="24/7 Concierge" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
-                        <div class="option-label">Conciergerie 24/7</div>
-                        <h3 class="option-name">Coordinateur MIA personnel</h3>
+                        <div class="option-label">24/7 Concierge</div>
+                        <h3 class="option-name">Dedicated MIA Coordinator</h3>
                         <div class="features-list">
-                            <div class="feature-item">Assistance multilingue (français/anglais)</div>
-                            <div class="feature-item">Gestion des modifications de dernière minute</div>
-                            <div class="feature-item">Service d'urgence 24/7</div>
-                            <div class="feature-item">Coordination avec tous les prestataires</div>
+                            <div class="feature-item">Multilingual assistance (French/English)</div>
+                            <div class="feature-item">Last‑minute change management</div>
+                            <div class="feature-item">24/7 emergency service</div>
+                            <div class="feature-item">Coordination with all providers</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- OPTIONS PREMIUM DISPONIBLES -->
+        <!-- PREMIUM OPTIONS -->
         <div class="section">
             <div class="section-header">
-                <h2 class="section-title">Options Premium</h2>
-                <p class="section-subtitle">Complétez l’expérience avec des services d’exception</p>
+                <h2 class="section-title">Premium Options</h2>
+                <p class="section-subtitle">Enhance the experience with exceptional services</p>
             </div>
             
             <div class="options-grid">
@@ -551,31 +587,31 @@
                     </div>
                     <div class="option-content">
                         <div class="option-label">Personal Shopping & Styling</div>
-                        <h3 class="option-name">Styliste professionnel dédié</h3>
-                        <div class="luxury-badge">+19 000€</div>
+                        <h3 class="option-name">Dedicated professional stylist</h3>
+                        <div class="luxury-badge">+€19,000</div>
                         <div class="features-list">
-                            <div class="feature-item">Styliste dédié (3 jours)</div>
-                            <div class="feature-item">Sessions privées Avenue Montaigne</div>
-                            <div class="feature-item">Accès après fermeture (Dior, Chanel, LV)</div>
-                            <div class="feature-item">3 looks complets pour événements clés</div>
-                            <div class="feature-item">Livraison/retouches express</div>
+                            <div class="feature-item">Dedicated stylist (3 days)</div>
+                            <div class="feature-item">Private sessions on Avenue Montaigne</div>
+                            <div class="feature-item">After‑hours access (Dior, Chanel, LV)</div>
+                            <div class="feature-item">3 complete looks for key events</div>
+                            <div class="feature-item">Express delivery/alterations</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/luxury_boutique.jpeg" alt="Expériences Gastronomiques" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/AdobeStock_126017344.jpeg" alt="Michelin‑starred Dining & Private Chef" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
-                        <div class="option-label">Expériences Gastronomiques</div>
-                        <h3 class="option-name">Tables étoilées & chef privé</h3>
-                        <div class="luxury-badge">+7 500€</div>
+                        <div class="option-label">Gastronomic Experiences</div>
+                        <h3 class="option-name">Michelin‑starred Tables & Private Chef</h3>
+                        <div class="luxury-badge">+€7,500</div>
                         <div class="features-list">
-                            <div class="feature-item">3 dîners restaurants étoilés Michelin</div>
-                            <div class="feature-item">Chef privé pour 2 soirées à l'hôtel</div>
-                            <div class="feature-item">Service champagne et cocktails premium</div>
-                            <div class="feature-item">Réservations tables impossibles à obtenir</div>
+                            <div class="feature-item">3 dinners at Michelin‑starred restaurants</div>
+                            <div class="feature-item">Private chef for 2 evenings at the hotel</div>
+                            <div class="feature-item">Champagne and premium cocktail service</div>
+                            <div class="feature-item">Reservations for impossible‑to‑get tables</div>
                         </div>
                     </div>
                 </div>
@@ -584,16 +620,16 @@
             <div class="options-grid">
                 <div class="option-card">
                     <div class="option-image-placeholder">
-                        <img src="images/bodyguard_image.jpeg" alt="Sécurité & Services Premium" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/bodyguard_image.jpeg" alt="Security & Premium Services" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="option-content">
-                        <div class="option-label">Sécurité & Premium</div>
-                        <h3 class="option-name">Agent de sécurité discret 24/7</h3>
-                        <div class="luxury-badge">+20 000€</div>
+                        <div class="option-label">Security & Premium</div>
+                        <h3 class="option-name">Discreet security agent 24/7</h3>
+                        <div class="luxury-badge">+€20,000</div>
                         <div class="features-list">
-                            <div class="feature-item">Coordination sécurité événements</div>
-                            <div class="feature-item">Véhicule d'accompagnement</div>
-                            <div class="feature-item">Protection image/paparazzi</div>
+                            <div class="feature-item">Event security coordination</div>
+                            <div class="feature-item">Escort vehicle</div>
+                            <div class="feature-item">Image/paparazzi protection</div>
                         </div>
                     </div>
                 </div>
@@ -604,13 +640,13 @@
                     </div>
                     <div class="option-content">
                         <div class="option-label">Production & Image</div>
-                        <h3 class="option-name">Photographe & contenus</h3>
-                        <div class="luxury-badge">+8 000€</div>
+                        <h3 class="option-name">Photographer & content</h3>
+                        <div class="luxury-badge">+€8,000</div>
                         <div class="features-list">
-                            <div class="feature-item">Photographe professionnel (2 jours)</div>
-                            <div class="feature-item">Shooting lieux iconiques parisiens</div>
-                            <div class="feature-item">Retouches professionnelles</div>
-                            <div class="feature-item">Gestion réseaux sociaux (sur demande)</div>
+                            <div class="feature-item">Professional photographer (2 days)</div>
+                            <div class="feature-item">Shoots at iconic Paris locations</div>
+                            <div class="feature-item">Professional retouching</div>
+                            <div class="feature-item">Social media management (on request)</div>
                         </div>
                     </div>
                 </div>
@@ -619,30 +655,30 @@
 
         <!-- Exclusive Banner -->
         <div class="exclusive-banner">
-            <h3>Discrétion • Excellence • Disponibilité</h3>
+            <h3>Discretion • Excellence • Availability</h3>
             <p>
-                Votre équipe MIA dédiée assure une confidentialité absolue et un service personnalisé 24/7. 
-                De la gestion des urgences aux accès les plus exclusifs, nous orchestrons une expérience Paris Fashion Week sans compromis.
+                Your dedicated MIA team ensures absolute confidentiality and personalized service 24/7. 
+                From handling emergencies to securing the most exclusive access, we orchestrate a Paris Fashion Week experience without compromise.
             </p>
         </div>
 
         <!-- Contact Section -->
         <div class="contact-section">
-            <h3 class="contact-title">Votre équipe dédiée</h3>
-            <p class="contact-subtitle">Disponible 24/7 pour toutes vos demandes</p>
+            <h3 class="contact-title">Your Dedicated Team</h3>
+            <p class="contact-subtitle">Available 24/7 for all your requests</p>
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <h4>Ligne directe</h4>
-                    <p>+33 6 38 01 11 10<br>Service prioritaire 24/7</p>
+                    <h4>Direct Line</h4>
+                    <p>+33 6 38 01 11 10<br>Priority service 24/7</p>
                 </div>
                 <div class="contact-item">
                     <h4>Email</h4>
                     <p>concierge@myinternationalagent.com</p>
                 </div>
                 <div class="contact-item">
-                    <h4>Site</h4>
-                    <p>www.myinternationalagent.com<br>Accès membre</p>
+                    <h4>Website</h4>
+                    <p>www.myinternationalagent.com<br>Member access</p>
                 </div>
             </div>
         </div>
